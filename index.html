@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <style>
+    .assignment-text {
+      position: center;
+      top: 0;
+      right: 0;
+      padding: 0.5rem 1rem;
+      background-color: rgb(255 251 235);
+      box-shadow: black;
+      border-radius: 0 0 0 8px;
+      text-align: center;
+    }
+
+    body {
+        background-color: rgb(255 251 235);
+    }
+  </style>
+
+</head>
+<body class="p-6 relative">
+<div class="assignment-text text-xl font-bold text-gray-800">ASSIGMENT JAVASCRIPT WITH DOM, FUNCTION, ARRAY <br> BY : RESTI HANDAYANI</div>
+  <div class="bg-white max-w-md p-8 mx-auto mt-40 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-semibold mb-4">Login</h1>
+    <form id="loginForm">
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700 font-bold">Username</label>
+        <input type="text" id="username" class="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700 font-bold">Password</label>
+        <div class="relative">
+          <input type="password" id="password" class="w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500" required>
+          <span id="showPassword" class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-gray-800 transition-colors" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M4.293 5.293a1 1 0 011.414 0L10 10.586l4.293-4.293a1 1 0 111.414 1.414L11.414 12l4.293 4.293a1 1 0 01-1.414 1.414L10 13.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 12 4.293 7.707a1 1 0 010-1.414z"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white font-semibold rounded py-2">Login</button>
+    </form>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
